@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 66%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #333;
+    color: white;
+}
+
+.modal-body {padding: 10px;
+background-color: #f0f0f0;
+text-align: justify;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #333;
+    color: white;
+}
+h3
+{margin-bottom: 2px;}
+</style>
+</head>
+<body>
+
+<h2>Animated Modal with Header and Footer</h2>
+
+  <!-- Trigger/Open The Modal -->
+  <button id='myBtn' onclick='show_modal(0)'>Open Modal</button>
+
+  <!-- The Modal -->
+  <div id='myModal' class='modal'>
+
+    <!-- Modal content -->
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <span class='close' onclick='close_modal(0)'>&times;</span>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class='modal-body'>
+        <b>Can I cancel my show tickets?</b>
+        <p>Tickets once purchased can neither be cancelled nor exchanged for an alternative show.</p>
+        <hr>
+        <b>How to I make a bulk/corporate booking?</b>
+        <p>For purchasing more than 20 seats for a show, please contact us using the <a href='corporate_bookings.html'>corporate booking form</a></p>
+        <hr>
+        <b>My question is not listed here !</b>
+        <p>Kindly call 1800-DEJAVIEW to speak to our customer care representatives.</p>
+        <hr>
+        <b>How can I apply for a job at Deja View Cinemas</b>
+        <p>Please visit the <a href='jobs.html'>jobs page</a> and fill up the application form.  We will contact shortlisted candidates for an interview within 7-10 days.</p>
+      </div>
+    </div>
+
+  </div>
+
+
+<button id='myBtn1' onclick='show_modal(1)'>Open Modal1</button>
+<!-- The Modal -->
+<div id='myModal1' class='modal'>
+
+  <!-- Modal content -->
+  <div class='modal-content'>
+    <div class='modal-header'>
+      <span class='close' onclick='close_modal(1)'>&times;</span>
+      <h2>Contact Us</h2>
+    </div>
+    <div class='modal-body'>
+      <img src='Images\NTU.jpg' style='height:500px; margin:15px ;float:right;'>
+    <h3>Address</h3>
+    Deja View Cinemas Pte Ltd<br>Nanyang Technological University<br>50 Nanyang Ave, Singapore 639798
+    <h3>Phone Number</h3>
+    Toll Free : 1800-DEJA-VIEW Charges Apply : +65 8888-8888
+    <h3>By Bus</h3>
+    <b>Service 179 and 199</b><br>SBS Transit Ltd, a public bus company, provides two services, 179 and 199, between Boon Lay Bus Interchange (next to Boon Lay MRT Station) and the University. The services ply from 0600-2400 hrs on weekdays and Saturdays, and from 0630-0020hrs on Sundays and Public Holidays.
+    <br>
+    <b>NTU shuttle bus service</b><br>Campus Rider - Campus Rider is a free shuttle bus service to and from Pioneer MRT station.
+    <h3>By Train and Bus</h3>
+    The nearest train stations to NTU are Boon Lay (EW27) and Pioneer (EW28) on the East West Line operated by SMRT Corporation.
+    From Boon Lay station, make your way to the adjacent bus interchange. Services 179, 199 will take you in to NTU.
+    From Pioneer station, hop on the Campus Rider which stops in front of Blk 649A.
+
+<h3>By Car</h3>
+The university is flanked by the PIE to the south and Jalan Bahar to the east. There are two entrances, the Jalan Bahar entrance and the Pioneer North entrance. It you're coming via the PIE, you want Exits 36 or 38 respectively.
+More information on carpark charges and season parking available from NTU website on carparking.
+    <div style='clear:both'></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+// Get the button that opens the modal
+var btn = document.getElementById('myBtn');
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName('close')[0];
+// When the user clicks the button, open the modal
+function show_modal(x) {
+    document.getElementsByClassName('modal')[x].style.display = 'block';
+}
+// When the user clicks on <span> (x), close the modal
+function close_modal(x) {
+    document.getElementsByClassName('modal')[x].style.display = 'none';
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+</script>
+
+</body>
+</html>

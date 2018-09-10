@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corporate Bookings</title>
+<link rel="stylesheet" href="new_style.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu">
+</head>
+<body>
+
+  <ul>
+    <li><span id="title_djc">&nbsp Deja View Cinemas &nbsp</span><li>
+  <li><a href="index.html">Home</a></li>
+    <li><a href="movies.html">Movies</a></li>
+    <li><a href="#showtimes">Showtimes</a></li>
+    <li><a href="#about">Locations</a></li>
+    <li><a href="#promotions">Promotions</a></li>
+    <li><a class="active" href="" >Corporate Booking</a></li>
+  </ul>
+
+<img src  ="Images\corporate_bookings.png" class = "head">
+
+<div class="wrapper">
+  <form action="/action_page.php">
+    <table>
+ To make a corporate booking please fill up the follwoing form. Our marketing
+ team will get in touch with you shortly. Kindly provide all possible details
+so that we can cater to your needs as closely as possible.
+<hr>
+ <tr><td colspan="2" class="high">Contact Information</td></tr>
+<tr>
+  <td>First Name</td>
+    <td>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  </td>
+</tr>
+    <tr><td>Last Name</td>
+    <td><input type="text" id="lname" name="lastname" placeholder="Your last name.."><td>
+</tr>
+    <tr><td>Contact Number</td>
+    <td><input type="text" id="cno" name="contactnumber" placeholder="+65-XXXX-XXXX"><td>
+</tr>
+
+<tr ><td colspan="2" class="high">Booking Information</td></tr>
+<tr><td>Date</td>
+<td><input type="date" id="date" name="date" ><td>
+</tr>
+    <tr><td>Time</td>
+    <td><select id="time" name="time">
+      <option value="morning">Morning</option>
+      <option value="noon">Noon</option>
+      <option value="usa">USA</option>
+    </select></td>
+</tr>
+
+    <tr><td>Location
+    </td>
+    <td><select id="time" name="time">
+      <option value="morning">Morning</option>
+      <option value="noon">Noon</option>
+      <option value="usa">USA</option>
+    </select></td>
+</tr>
+<tr>
+  <td>
+    Additional Remarks
+  </td>
+  <td>
+    <textarea name="remarks" id="remarks">Let us know if you have any special requests</textarea>
+  </td>
+</tr>
+<tr><td colspan="2"><input type="submit" value="Submit"></td></tr>
+    </table>
+  </form>
+</div>
+<div class="foot">
+  lolz
+</div>
+</body>
+</html>

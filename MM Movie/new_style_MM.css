@@ -1,0 +1,428 @@
+body
+{font-family: Ubuntu;
+background-color: #ddd;
+background-image: url("Images/cinema.jpg");
+ background-attachment: fixed;
+}
+
+.container {
+  position: relative;
+  width: 240px;
+  float: left;
+  margin: 15px;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+}
+
+.image {
+  display: block;
+  width: 240px;
+  height: auto;
+}
+
+.image_large {
+height: 400px;
+display: block;
+margin: auto;
+border-radius: 15px;
+box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 240px;
+  height: auto;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #333;
+}
+
+.container:hover .overlay {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.text {
+  color: #eee;
+  position: absolute;
+ bottom:0px;
+	left:0px;
+  margin: 20px;
+}
+
+.title
+{font-size: 25px;}
+
+
+.language ,.rating, .duration
+{font-size: 15px;
+}
+
+.leftcol
+{float:left;}
+
+.wrapper
+{width: 1100px;
+margin: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+display: block;
+background-color: #f0f0f0;
+overflow: auto;
+padding: 15px;
+box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+    background-color: #f00c0c;
+
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=date] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+table
+{width: 80%;
+margin: auto;}
+
+.high
+{font-size: 1.5em;
+background-color: #eee;
+text-align: center;
+box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);}
+
+.description{float: left;
+padding-left: 30px;
+width: 640px;
+height: 640px;
+text-align: justify;}
+
+iframe
+{display: block;
+box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+margin: auto;}
+
+h2
+{color: #AAA;
+}
+
+.head
+{display: block;
+height:136px;
+width:auto;
+margin :auto;
+margin-top: 70px;
+margin-bottom: 30px;
+}
+
+#footer
+{background-color: #333;
+color:#eee;
+width=100%;
+text-align: center;
+padding: 0px;
+margin: 0px;}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    margin: 20px;
+    background-color: #eee;
+    padding: 15px;
+ justify-content: center;
+}
+
+.flex-item {
+%    background-color: cornflowerblue;
+    width: 340px;
+    height: 300px;
+    margin: 15px;
+    padding: 5px;
+}
+
+
+.selection
+{ padding: 10px;
+  padding-bottom: 0px;
+  width:100%;}
+
+#movie
+{width: 200px;
+  height: auto;
+margin-left: 18px;
+margin-right: 18px;
+border-radius: 4px;
+box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.5);}
+
+
+#title_djc
+{font-size: 1.5em;
+font-weight: bold;
+display: block;
+color: white;
+font-size: 20px;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.colimg
+{display: block;
+height : 50px;
+margin: auto;}
+
+.foot
+{margin-top: 30px;
+padding: 10px;
+display: block;
+text-align: center;
+background-color: #111;
+color: #eee;}
+
+
+/*MM additions*/
+
+/*Seat Selection*/
+td {
+  display: block;
+  float: left;
+  margin: 5px;
+}
+
+.Row {
+    margin: 5px 5px 5px 30px;
+    font-weight: bold;
+    font-size: 1.5em;
+    width: 30px;
+    height: 30px;
+}
+
+.Seats {
+    display: block;
+    float: left;
+    background: url("Images/seat.png");
+    text-align: center;
+    color: #FFF;
+    width: 30px;
+    height: 30px;
+}
+
+.Seats:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+label:hover{
+  cursor: pointer;
+}
+
+#screen {
+    float: left;
+    display: block;
+    background: #ACADAF;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    width: 500px;
+    height: 30px;
+}
+
+#seat {
+  width: 60%;
+  margin: auto;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+}
+
+input {
+  position: absolute;
+  left: -9999px;
+}
+
+input:checked + label{
+  background: url("Images/seat_selected.png")
+}
+
+/*General Use*/
+
+.continue{
+    display: block;
+    float: right;
+    height: 30px;
+    background: #03AF26;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
+    margin-top: 20px;
+    clear: left;
+    text-align: center;
+    width: auto;
+    margin-bottom: 20px;
+    padding: 5px;
+    color: #FFF;
+    text-align: center;
+    border: solid #427AA8 1px;
+    border-radius: 5px;
+}
+
+/*Showtimes*/
+
+.movie{
+    display: block;
+    float: left;
+    clear: both;
+    margin: 5px;
+    width: 400px;
+}
+
+.movie_name{
+    font-size: 20px;
+    color: black;
+}
+
+#date_select{
+    float: left;
+    width: 150px;
+    height: 30px;
+    margin-left: 50px;
+}
+
+.timings{
+    float: right;
+    overflow: auto;
+    position: relative;
+    width: 600px;
+}
+
+.button{
+  display: block;
+  float: left;
+  position: relative;
+  height: 30px;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.3);
+  margin: 10px 15px 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  width: 100px;
+  text-align: center;
+  border: solid #427AA8 2px;
+  border-radius: 5px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    clear: both;
+}
+
+/*Confirmation page*/
+
+.confirmation{
+  display: block;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+  margin: auto;
+  background: #0CA08F;
+  width: 900px
+  border: solid #427AA8 2px;
+  overflow: auto;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.box_row {
+    display: block;
+    float: left;
+    width: 800px;
+    margin: 0px 50px 0px 100px;
+    color: white;
+}
+
+.box_row:first-of-type{
+    font-size: 1.3em;
+}
+
+.name {
+    display:block;
+    float: left;
+    text-align: left;
+    width: 300px;
+}
+
+.price, .qty, .total {
+    display: block;
+    float: left;
+    text-align: right;
+    width: 150px;
+}
+
+.final_amt {
+    color: #E5CF0B;
+    font-size: 2em;
+    text-align: right;
+    margin: 20px;
+    height: 30px;
+    width: 750px;
+}
